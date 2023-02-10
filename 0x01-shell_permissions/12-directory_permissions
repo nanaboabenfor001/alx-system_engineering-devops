@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir my_dir, chmond drwxr-x--x my_dir
+mkdir my_dir, chmod drwxr-x--x my_dir
