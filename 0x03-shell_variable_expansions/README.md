@@ -1,1 +1,0 @@
-Shekk variable expansions project
