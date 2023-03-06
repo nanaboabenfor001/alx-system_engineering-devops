@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1p | LC_COLLATE=C sort -df | sed -e 's/^\.\{0,2\}$/&\//' | paste -sd "," - ; echo ""
+ls -1Ap | sed ':a;N;$!ba;s/\n/, /g' | sed 's/,$/\n/'
