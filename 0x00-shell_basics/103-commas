@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" ./ ../ .[^.]*/ [^.]*/
+ls -a | grep -E "^\.|[^.]" | sort -df | sed -e 's/^/"/' -e 's/$/",/' -e '$s/,$/\n/'
