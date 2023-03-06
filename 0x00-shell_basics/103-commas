@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{printf "%s%s", $0, (/^.*\/$/ ? "" : ", ")} END {print ""}'
+ls -1p | LC_COLLATE=C sort -df | sed -e 's/^\.\{0,2\}$/&\//' | paste -sd "," - ; echo ""
